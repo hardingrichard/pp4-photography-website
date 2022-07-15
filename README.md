@@ -32,7 +32,7 @@
     3. [Accessibility](#accessibility)
     4. [Compatibility](#compatibility)
     5. [User Stories Testing](#user-stories-testing)
-8. [Bugs And Fix](#bugs-and-fixes)
+8. [Bugs And Fixes](#bugs-and-fixes)
 9. [Deployment And Version Control](#deployment-and-version-control)
     1. [Deployment](#deployment)
     2. [Cloning](#cloning)
@@ -42,4 +42,78 @@
     2. [Assets Used](#assets-used)
 11. [Acknowledgements](#acknowledgements)
 
-## Key Project Goals
+## Project Goals
+
+### Site Owner Goals
+
+### User Goals
+
+## Information Gathering
+
+### Target Audience
+
+### User Requirements
+
+### User Stories
+
+## Site Design
+
+### Wireframes
+
+### Design Choice
+
+## Technical Design
+
+### Database Model
+
+## Site Features
+
+### Home
+
+### About
+
+### Gallery
+
+### Contact
+
+### Booking
+
+### Community
+
+### 404 Error page
+
+## Technology Stack
+
+### Languages
+
+### Frameworks And Tools
+
+## Testing
+
+### Validation
+
+### Performance
+
+### Accessibility
+
+### Compatibility
+
+### User Stories Testing
+
+## Bugs And Fixes
+
+## Deployment And Version Control
+
+### Deployment
+
+### Cloning
+
+### Version Control
+
+## Credits
+
+### External Code
+
+### Assets Used
+
+## Acknowledgments
