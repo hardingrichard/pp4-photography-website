@@ -56,6 +56,18 @@
 
 ### User Stories
 
+No. | As a | I want to | so that
+----|------|-----------|--------
+1 | New User | view information about the photographer | I can see what experience the photographer has and learn about their style.
+2 | New User | see the photographers work | I can see if photographers style fits my needs for booking.
+3 | New User | easy navigate the website | I can have a good experience and find what I require.
+4 | New User | be able to contact the photographer | I can get my queries answered.
+5 | New User | be able to make a booking | I can have photoshoot and pictures taken.
+6 | New User | see where the photographer is based | I can see if local and feasible for travel.
+7 | New User | see the photographers social media presence | I can get an idea of how reputable the photographer is.
+8 | New User | be able to make an account | I can join the community page.
+9 | New User | be able to make to navigate back to home page should site error occur | I can continue my browsing with ease.
+
 ## Site Design
 
 ### Wireframes
