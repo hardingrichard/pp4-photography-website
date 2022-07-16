@@ -67,6 +67,13 @@ No. | As a | I want to | so that
 7 | New User | see the photographers social media presence | I can get an idea of how reputable the photographer is.
 8 | New User | be able to make an account | I can join the community page.
 9 | New User | be able to make to navigate back to home page should site error occur | I can continue my browsing with ease.
+10 | Existing User | be able to upload, edit, delete and share images | I can actively partake in the community and remove post if mistakenly uploaded.
+11 | Existing user | see what services are offered | see what best suits my needs
+12 | Existing User | log into my account | I can continue to post in the community.
+13 | Existing User | upload, edit and delete photos | I can have a social presence in the community and control over my contribution.
+14 | Existing User | book an appointment | to have photos taken.
+15 | Existing User | get in contact with photographer | I can follow up any bookings or add special requests.
+
 
 ## Site Design
 
