@@ -45,6 +45,9 @@
 ## Project Goals
 
 ### Site Owner Goals
+* To have a simple to navigate website to attract business
+* Allow users to book a session and get in contact
+* Provide a community to customers
 
 ### User Goals
 
