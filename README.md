@@ -50,6 +50,9 @@
 * Provide a community to customers
 
 ### User Goals
+* To view photographers and other peoples photographs
+* To be able to make a booking
+* Contact the photographer
 
 ## Information Gathering
 
