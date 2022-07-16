@@ -73,6 +73,13 @@ No. | As a | I want to | so that
 13 | Existing User | upload, edit and delete photos | I can have a social presence in the community and control over my contribution.
 14 | Existing User | book an appointment | to have photos taken.
 15 | Existing User | get in contact with photographer | I can follow up any bookings or add special requests.
+16 | Site Owner | have information about me available for customers | customers can get an idea of me and my business.
+17 | Site Owner | have my previous work on show | customers can form an opinion on my style of photography and if it matches what they are after.
+18 | Site Owner | have an easy to navigate website | customers don't become frustrated and leave site.
+19 | Site Owner | have an error page | when a customer navigates to a non existent page a 404 error is presented.
+20 | Site Owner | have a community page | customers can partake in sharing their photos and feel involved.
+21 | Site Owner | have a contact page | customers can raise any queries and get in touch with me.
+22 | Site Owner | have a booking page | I can increase business sales and offer a more automated approach at scheduling appointments.
 
 
 ## Site Design
