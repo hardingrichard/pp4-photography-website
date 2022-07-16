@@ -57,7 +57,11 @@
 * Companies who want commercial photos taken
 
 ### User Requirements
-
+* Easy to navigate website
+* Website works as expected
+* The ability to add, create and remove photographs
+* Accessible to users
+* Visually appealing website to instil confidence
 
 ### User Stories
 
