@@ -51,8 +51,13 @@
 ## Information Gathering
 
 ### Target Audience
+* People who want to have portraits taken of themselves or family
+* Pet owners who want photos of their pet taken
+* People who hold an interest in photography and want to share their pictures
+* Companies who want commercial photos taken
 
 ### User Requirements
+
 
 ### User Stories
 
