@@ -145,6 +145,7 @@ The below database model contains the fields for what is stored in the database 
 </details>
 
 ## Site Features
+The website consists of 8 different pages below with the following features
 
 ### Home
 
@@ -156,7 +157,9 @@ The below database model contains the fields for what is stored in the database 
 
 ### Booking
 
-### Community
+### Community (Logged out)
+
+### Community (Logged in)
 
 ### 404 Error page
 
