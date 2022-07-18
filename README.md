@@ -108,21 +108,27 @@ No. | As a | I want to | so that
 <summary>About Page</summary>
 <img src="documents/wireframes/aboutpage.png" alt="About page wireframes image">
 </details>
+<details>
 <summary>Gallery Page</summary>
 <img src="documents/wireframes/gallerypage.png" alt="Gallery page wireframes image">
 </details>
+<details>
 <summary>Contact Page</summary>
 <img src="documents/wireframes/contactpage.png" alt="Contact page wireframes image">
 </details>
+<details>
 <summary>Booking Page</summary>
 <img src="documents/wireframes/bookingpage.png" alt="Booking page wireframes image">
 </details>
+<details>
 <summary>Community - Logged Out Page</summary>
 <img src="documents/wireframes/communityloggedoutpage.png" alt="Logged Out Community page wireframes image">
 </details>
+<details>
 <summary>Community - Logged In Page</summary>
 <img src="documents/wireframes/communityloggedinpage.png" alt="Logged In Community page wireframes image">
 </details>
+<details>
 <summary>404 Error Page</summary>
 <img src="documents/wireframes/404errorpage.png" alt="404 Error page wireframes image">
 </details>
