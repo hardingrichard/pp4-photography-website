@@ -100,6 +100,10 @@ No. | As a | I want to | so that
 ## Site Design
 
 ### Wireframes
+<details>
+<summary>Home Page</summary>
+<img src="documents/wireframes/homepage.png" alt="Home page wireframes image">
+</details>
 
 ### Design Choice
 
