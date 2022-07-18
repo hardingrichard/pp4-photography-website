@@ -120,6 +120,9 @@ No. | As a | I want to | so that
 <summary>Community - Logged Out Page</summary>
 <img src="documents/wireframes/communityloggedoutpage.png" alt="Logged Out Community page wireframes image">
 </details>
+<summary>Community - Logged In Page</summary>
+<img src="documents/wireframes/communityloggedinpage.png" alt="Logged In Community page wireframes image">
+</details>
 
 ### Design Choice
 
