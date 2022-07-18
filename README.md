@@ -146,6 +146,18 @@ No. | As a | I want to | so that
 ## Deployment And Version Control
 
 ### Deployment
+To deploy your application to Heroku please complete the following:
+
+1. Create an account at heroku.com
+2. Create a new app 
+3. Add the app name and your region
+4. Click on create App
+5. Go to "Settings"
+6. Under Config Vars, add the key: PORT and the value: 8000.
+7. Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+8. Enter your repository name and click on it when it shows below
+9. Choose the branch you want to build your app from
+10. If desired, click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
 
 ### Cloning
 
