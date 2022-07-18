@@ -166,8 +166,29 @@ The website consists of 8 different pages below with the following features
 ## Technology Stack
 
 ### Languages
+* HTML
+* CSS
+* JavaScript
+* Python
+* SQL
 
 ### Frameworks And Tools
+* Django
+* Bootstrap
+* Heroku
+* Git
+* Github
+* Gitpod
+* Google fonts
+* Balsamiq wireframes
+* Font Awesome
+* Chrome DevTools
+* Chrome Lighthouse
+* WAVE WebAIM accessibility evaluation
+* W3C Jigsaw CSS Validation
+* W3C Markup Validation
+* EmailjS
+
 
 ## Testing
 
