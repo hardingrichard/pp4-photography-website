@@ -123,6 +123,9 @@ No. | As a | I want to | so that
 <summary>Community - Logged In Page</summary>
 <img src="documents/wireframes/communityloggedinpage.png" alt="Logged In Community page wireframes image">
 </details>
+<summary>404 Error Page</summary>
+<img src="documents/wireframes/404errorpage.png" alt="404 Error page wireframes image">
+</details>
 
 ### Design Choice
 
