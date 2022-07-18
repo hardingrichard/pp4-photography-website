@@ -104,6 +104,10 @@ No. | As a | I want to | so that
 <summary>Home Page</summary>
 <img src="documents/wireframes/homepage.png" alt="Home page wireframes image">
 </details>
+<details>
+<summary>About Page</summary>
+<img src="documents/wireframes/aboutpage.png" alt="About page wireframes image">
+</details>
 
 ### Design Choice
 
