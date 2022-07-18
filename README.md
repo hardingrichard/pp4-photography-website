@@ -111,8 +111,11 @@ No. | As a | I want to | so that
 <summary>Gallery Page</summary>
 <img src="documents/wireframes/gallerypage.png" alt="Gallery page wireframes image">
 </details>
-<summary>Contact Us Page</summary>
-<img src="documents/wireframes/contactuspage.png" alt="Contact Us page wireframes image">
+<summary>Contact Page</summary>
+<img src="documents/wireframes/contactpage.png" alt="Contact page wireframes image">
+</details>
+<summary>Booking Page</summary>
+<img src="documents/wireframes/bookingpage.png" alt="Booking page wireframes image">
 </details>
 
 ### Design Choice
