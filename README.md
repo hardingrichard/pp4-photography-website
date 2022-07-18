@@ -117,6 +117,9 @@ No. | As a | I want to | so that
 <summary>Booking Page</summary>
 <img src="documents/wireframes/bookingpage.png" alt="Booking page wireframes image">
 </details>
+<summary>Community - Logged Out Page</summary>
+<img src="documents/wireframes/communityloggedoutpage.png" alt="Logged Out Community page wireframes image">
+</details>
 
 ### Design Choice
 
