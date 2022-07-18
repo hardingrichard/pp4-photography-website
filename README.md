@@ -138,6 +138,11 @@ No. | As a | I want to | so that
 ## Technical Design
 
 ### Database Model
+The below database model contains the fields for what is stored in the database collection along with the data type for each field.
+<details>
+<summary>Database Model</summary>
+<img src="documents/database-model/dbmodel.png" alt="Database Model containing fields and datatypes  image">
+</details>
 
 ## Site Features
 
