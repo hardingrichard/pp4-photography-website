@@ -139,7 +139,7 @@ No. | As a | I want to | so that
 The layout for the website is intended to be clean, simple and asthetically pleasing, in line with the artistic flow of photography. Clear images that fill the page and are free from distracting elements. The website is easy to navigate and consists of 8 pages. 
 
 #### Fonts
-The fonts used are the paring of Roboto Medium and Noto Sans as they are easy to read and have simple typography which compliments the clean asthetic of the website.
+The fonts used are the pairing of Roboto Medium and Noto Sans as they are easy to read and have simple typography which compliments the clean asthetic of the website.
 
 #### Colours
 The colour scheme consists of whites, greys, greens and blues. The main colour being white for the clean background and then grey used to seperate the navbar from the body with green accents.
@@ -196,6 +196,8 @@ The website consists of 8 different pages below with the following features
 * WAVE WebAIM accessibility evaluation
 * W3C Jigsaw CSS Validation
 * W3C Markup Validation
+* JSHint Static Code Analysis Tool
+* PEP8 Online Validation Service
 * EmailjS
 
 
