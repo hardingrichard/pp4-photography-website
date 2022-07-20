@@ -14,7 +14,7 @@
     1. [Wireframes](#wireframes)
     2. [Design choice](#design-choice)
 4. [Technical Design](#technical-design)
-    1. [Database Model](#database-models)
+    1. [Database Model](#database-model)
 5. [Site Features](#site-features)
     1. [Home](#home)
     2. [About](#about)
