@@ -29,3 +29,9 @@ class PhotoshareTagListView(PhotoshareListView):
         context = super().get_context_data(**kwargs)
         context["tag"] = self.get_tag()
         return context
+
+# Displays unique image data of title, description and tag
+class PhotoshareDetailView(DetailView):
+    model = Photoshare
+    template_name = 'community/detail.html'
+    context_object_name = 'image'
