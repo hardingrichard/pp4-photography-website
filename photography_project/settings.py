@@ -66,6 +66,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# CSRF token fix
+CSRF_TRUSTED_ORIGINS = ['https://8000-hardingrich-pp4photogra-p4va6psc8s3.ws-eu62.gitpod.io', 'http://127.0.0.1:8000/']
+
 ROOT_URLCONF = 'photography_project.urls'
 
 TEMPLATES = [
@@ -154,3 +157,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Django-taggit tags sensitivity
 TAGGGIT_CASE_INSENSITIVE = True
+
+
