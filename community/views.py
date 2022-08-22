@@ -5,13 +5,27 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin #
 from django.urls import reverse_lazy # redirect users
 from .models import Photoshare # Retrieve and update database
 
+# Passes context of all photos uploaded by user and inherit ListView
+class PhotoshareListView(ListView):
+    model = Photoshare
+    template_name = 'community/list.html'
+    context_object_name = 'image'
 
+# 3rd party code below taken from sitepoint.com/django-photo-sharing-app and modified to suit needs
+# Inherits attributes from PhotoshareListView and tag slug argument
+class PhotoshareTagListView(PhotoshareListView):
+    template_name = 'community/taglist.html'
 
-# from django.shortcuts import render
-
-# def index(request):
-#     # Import Photoshare and save to database
-#     photo = Photoshare.objects.all()
-#     # Add context
-#     ctx = {'photo':photo}
-#     return render(request, 'index.html', ctx)
+    # Receives the tag slug from response and returns
+    def get_tag(self):
+        return self.kwargs.get('tag')
+    
+    # Returns only photo objects tagged with slug
+    def get_queryset(self):
+        return self.model.objects.filter(tags__slug=self.get_tag())
+    
+    # Returns tag passed to URL to display in template
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["tag"] = self.get_tag()
+        return context
