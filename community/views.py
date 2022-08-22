@@ -1,6 +1,9 @@
 from django.shortcuts import render
-
-# Create your views here.
+from .models import Photoshare
 
 def index(request):
-    return render(request, 'index.html')
+    # Import Photoshare and save to database
+    photo = Photoshare.objects.all()
+    # Add context
+    ctx = {'photo':photo}
+    return render(request, 'index.html', ctx)
