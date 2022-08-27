@@ -11,7 +11,7 @@ class PhotoshareListView(ListView):
     template_name = 'community/list.html'
     context_object_name = 'image'
 
-# 3rd party code below taken from sitepoint.com/django-photo-sharing-app and modified to suit needs
+# 3rd party code for ListView taken from sitepoint.com/django-photo-sharing-app and modified to suit needs
 # Inherits attributes from PhotoshareListView and tag slug argument
 class PhotoshareTagListView(PhotoshareListView):
     template_name = 'community/taglist.html'
@@ -35,3 +35,16 @@ class PhotoshareDetailView(DetailView):
     model = Photoshare
     template_name = 'community/detail.html'
     context_object_name = 'image'
+
+# Allows user to share a photo only if logged in otherwise redirect to login. 
+# Submits photo information to form and redirects to dashboard if successful.
+class Photoshare(LoginRequiredMixin, CreateView):
+    model = Photoshare
+    fields = ['title', 'description', 'image', 'tags']
+    template_name = 'community/create.html'
+    success_url = reverse_lazy('image:list')
+
+    # Labels user as submitter of the photograph
+    def form_valid(self, form):
+        form.instance.submitter = self.request.user
+        return super().form_valid(form)

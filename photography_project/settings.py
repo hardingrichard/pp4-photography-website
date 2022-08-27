@@ -72,7 +72,7 @@ MIDDLEWARE = [
 ]
 
 # CSRF token fix
-CSRF_TRUSTED_ORIGINS = ['https://8000-hardingrich-pp4photogra-p4va6psc8s3.ws-eu62.gitpod.io', 'http://127.0.0.1:8000/']
+CSRF_TRUSTED_ORIGINS = ['https://8000-hardingrich-pp4photogra-p4va6psc8s3.ws-eu63.gitpod.io', 'http://127.0.0.1:8000/']
 
 ROOT_URLCONF = 'photography_project.urls'
 
