@@ -5,11 +5,11 @@ from Photoshare import views
 # Import views and functions from views.py
 from .views import (
     PhotoshareListView,
-    PhotoshareTagListView,
-    PhotoshareDeleteView, 
+    PhotoshareTagListView, 
     PhotoshareDetailView,
     PhotoshareCreateView,
-    PhotoshareUpdateView
+    PhotoshareUpdateView,
+    PhotoshareDeleteView,
 )
 
 # Declares namespace of the app
@@ -21,6 +21,6 @@ urlpatterns = [
     path('image/<int:pk>/', PhotoshareDetailView.as_view(), name = 'detail'),
     path('tag/<slug:tag>/', PhotoshareTagListView.as_view(), name = 'tag'),
     path('image/create/', PhotoshareCreateView.as_view(), name = 'create'),
-    path('image/<int:pk>/update/' PhotoshareUpdateView.as_view(), name = 'update'),
-    path('image/<int:pk>/delete/' PhotoshareDeleteView.as_view(), name = 'delete'),
+    path('image/<int:pk>/update/', PhotoshareUpdateView.as_view(), name = 'update'),
+    path('image/<int:pk>/delete/', PhotoshareDeleteView.as_view(), name = 'delete'),
 ]
