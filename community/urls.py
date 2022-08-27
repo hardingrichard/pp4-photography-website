@@ -15,6 +15,7 @@ from .views import (
 # Declares namespace of the app
 app_name = 'image'
 
+# Receives arguments of the route, view and name used in the namespace
 urlpatterns = [ 
     path('', PhotoshareListView.as_view(), name = 'list'),
     path('image/<int:pk>/', PhotoshareDetailView.as_view(), name = 'detail'),
