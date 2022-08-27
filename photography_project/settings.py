@@ -164,4 +164,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Django-taggit tags sensitivity
 TAGGGIT_CASE_INSENSITIVE = True
 
-
+# Authentication
+LOGIN_URL = 'user:login'
+LOGIN_REDIRECT_URL = 'image:list'
+LOGOUT_REDIRECT_URL = 'image:list'
