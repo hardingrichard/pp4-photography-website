@@ -21,5 +21,6 @@ class SignUpView(CreateView):
         login(self.request, user)
         return to_return
 
+# Custom template for the login page
 class UserLoginView(LoginView):
     template_name = 'users/login.html'
