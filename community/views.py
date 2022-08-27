@@ -49,4 +49,15 @@ class PhotoshareCreateView(LoginRequiredMixin, CreateView):
         form.instance.submitter = self.request.user
         return super().form_valid(form)
 
-
+# Checks to see if the user trying to amend photo was the original submitter
+class UserIsSubmitter(UserPassesTestMixin):
+    # Method that returns an image, if the image doesnt exist raise 404 error
+    def get_image(self):
+        return get_object_or_404(Photoshare, pk=self.kwargs.get('pk'))
+    
+    # Test function to return true if logged in user otherwise raise a PermissionDenied exception
+    def test_func(self):
+        if self.request.user.is_authenticated:
+            return self.request.user == self.get_image().submitter
+        else:
+            raise PermissionDenied('You are not logged in to make changes to the photo')
