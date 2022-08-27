@@ -53,7 +53,7 @@ class PhotoshareCreateView(LoginRequiredMixin, CreateView):
 class UserIsSubmitter(UserPassesTestMixin):
     # Method that returns an image, if the image doesnt exist raise 404 error
     def get_image(self):
-        return get_object_or_404(Photoshare, pk=self.kwargs.get('pk'))
+        return get_object_or_404(Photoshare, pk = self.kwargs.get('pk'))
     
     # Test function to return true if logged in user otherwise raise a PermissionDenied exception
     def test_func(self):
@@ -61,3 +61,11 @@ class UserIsSubmitter(UserPassesTestMixin):
             return self.request.user == self.get_image().submitter
         else:
             raise PermissionDenied('You are not logged in to make changes to the photo')
+
+# Child mixin inherits test function from UserIsSubmitter and updates UpdateView functionality
+# Allows user to edit information about the image but not the image itself
+class PhotoshareUpdateView(UserIsSubmitter, Updateview):
+    model = Photoshare
+    fields = ['title', 'description', 'tags']
+    template_name = 'community/update.html'
+    success_url = reverse_lazy('image:list')
