@@ -64,7 +64,7 @@ class UserIsSubmitter(UserPassesTestMixin):
 
 # Child mixin inherits test function from UserIsSubmitter and updates UpdateView functionality
 # Allows user to edit information about the image but not the image itself
-class PhotoshareUpdateView(UserIsSubmitter, Updateview):
+class PhotoshareUpdateView(UserIsSubmitter, UpdateView):
     model = Photoshare
     fields = ['title', 'description', 'tags']
     template_name = 'community/update.html'
