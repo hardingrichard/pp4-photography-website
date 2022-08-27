@@ -69,3 +69,9 @@ class PhotoshareUpdateView(UserIsSubmitter, Updateview):
     fields = ['title', 'description', 'tags']
     template_name = 'community/update.html'
     success_url = reverse_lazy('image:list')
+
+# Child mixin inherits test function from UserIsSubmitter and allows user to delete image
+class PhotoshareDeleteView(UserIsSubmitter, DeleteView):
+    model = Photoshare
+    template_name = 'community/delete.html'
+    success_url = reverse_lazy('image:list')
