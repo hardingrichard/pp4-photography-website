@@ -25,4 +25,6 @@ urlpatterns = [
     # Community photosharing app
     path('', include('community.urls')),
     path('', views.index, name='index'),
+    # User Authorisation app
+    path('users/', include('users.urls')),
 ]
