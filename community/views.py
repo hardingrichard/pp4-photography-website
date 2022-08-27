@@ -38,7 +38,7 @@ class PhotoshareDetailView(DetailView):
 
 # Allows user to share a photo only if logged in otherwise redirect to login. 
 # Submits photo information to form and redirects to dashboard if successful.
-class Photoshare(LoginRequiredMixin, CreateView):
+class PhotoshareCreateView(LoginRequiredMixin, CreateView):
     model = Photoshare
     fields = ['title', 'description', 'image', 'tags']
     template_name = 'community/create.html'
@@ -49,4 +49,4 @@ class Photoshare(LoginRequiredMixin, CreateView):
         form.instance.submitter = self.request.user
         return super().form_valid(form)
 
-class
+
