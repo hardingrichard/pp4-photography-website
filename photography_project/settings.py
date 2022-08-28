@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     # 3rd party apps
     'cloudinary',
     'taggit',
+    'crispy_forms',
 
     # Custom apps
     'home',
@@ -163,6 +164,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Django-taggit tags sensitivity
 TAGGIT_CASE_INSENSITIVE = True
+
+# Django-crispy-forms framework utilisation
+CRISPY_TREMPLATE_PACK = 'bootstrap5'
 
 # Authentication
 LOGIN_URL = 'user:login'
