@@ -1,0 +1,12 @@
+<!-- Inherits template from list.html and adds message relating to tag codes -->
+{% extends 'community/list.html' %}
+
+{% block body %}
+
+<div class="alert alert-primary">
+    <h2 class="text-center">Images containg tag: {{tag}}</h2>
+</div>
+
+{{block.super}}
+
+{% endblock body %}
