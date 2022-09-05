@@ -9,7 +9,7 @@ from .models import Photoshare # Retrieve and update database
 class PhotoshareListView(ListView):
     model = Photoshare
     template_name = 'community/list.html'
-    context_object_name = 'image'
+    context_object_name = 'images'
 
 # 3rd party code for ListView taken from sitepoint.com/django-photo-sharing-app and modified to suit needs
 # Inherits attributes from PhotoshareListView and tag slug argument
