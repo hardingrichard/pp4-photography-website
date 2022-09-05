@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- Displays the user uploaded image -->
+<div class="row pb-5">
+    <div class="rounded mx-auto d-block">
+        <img src="{{image.image.url}}" alt="user submitted image" width="100%" />
+    </div>
+</div>
+<!-- Displays the title of the image and the uploader -->
+<div class="mx-auto">
+    <h1 class="text-center">{{image.title}}</h1>
+    <p class="text-center fw-light">Date uploaded: {{image.created}} <br> By user: {{image.submitter.username}}</p>
+    {% if user == image.submitter %}
+        <p class="text-center">
+            <span><a href="{% url 'image:update' image.id %}" class="text-primary px-2">Update</a></span>
+            <span><a href="{% url 'image:delete' image.id %}" class="text-primary px-2">Delete</a></span>
+        </p>
+    {% endif %}
+</div>
+<div class="mx-auto">
+    <h4 class="text-center">Description:</h4>
+    <p class="text-center">{{image.description}}</p>
+    <!-- Adds associated image tags that when clicked will display all images with tag -->
+    <div class="d-flex justify-content-center">
+        <ul class="list-group gap-2 list-group-horizontal list-unstyled py-4">
+            {% for tag in image.tags.all %}
+                <li><a href="{% url 'image:tag' tag.slug %}" class="btn btn-sm list-group-item-secondary">
+                    {{tag.name}}
+                </a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+{% endblock body %}
