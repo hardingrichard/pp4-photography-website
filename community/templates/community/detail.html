@@ -11,7 +11,9 @@
 <!-- Displays the title of the image and the uploader -->
 <div class="mx-auto">
     <h1 class="text-center">{{image.title}}</h1>
+    <!-- Accesses photo properties using dot notation -->
     <p class="text-center fw-light">Date uploaded: {{image.created}} <br> By user: {{image.submitter.username}}</p>
+    <!-- Displays links to update or delete image if user is the submitter -->
     {% if user == image.submitter %}
         <p class="text-center">
             <span><a href="{% url 'image:update' image.id %}" class="text-primary px-2">Update</a></span>
@@ -22,7 +24,7 @@
 <div class="mx-auto">
     <h4 class="text-center">Description:</h4>
     <p class="text-center">{{image.description}}</p>
-    <!-- Adds associated image tags that when clicked will display all images with tag -->
+    <!-- Iterates through image tags that when clicked will display all images with tag -->
     <div class="d-flex justify-content-center">
         <ul class="list-group gap-2 list-group-horizontal list-unstyled py-4">
             {% for tag in image.tags.all %}
