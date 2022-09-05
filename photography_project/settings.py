@@ -100,6 +100,8 @@ WSGI_APPLICATION = 'photography_project.wsgi.application'
 #     }
 # }
 
+
+# Temporary bug fix - commented out as causing Fatal Error. 
 # Heroku Postgresql
 # DATABASES = {
 #     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
