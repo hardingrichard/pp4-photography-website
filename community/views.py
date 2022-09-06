@@ -58,7 +58,7 @@ class PhotoshareCreateView(LoginRequiredMixin, CreateView):
 class UserIsSubmitter(UserPassesTestMixin):
     # Method that returns an image, if the image doesnt exist raise 404 error
     def get_image(self):
-        return get_object_or_404(Photoshare, pk = self.kwargs.get('pk'))
+        return get_object_or_404(Photoshare, pk=self.kwargs.get('pk'))
 
     # Test function to return true if logged in user otherwise raise a PermissionDenied exception
     def test_func(self):
