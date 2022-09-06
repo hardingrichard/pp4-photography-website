@@ -81,4 +81,5 @@ class PhotoshareUpdateView(UserIsSubmitter, UpdateView):
 class PhotoshareDeleteView(UserIsSubmitter, DeleteView):
     model = Photoshare
     template_name = 'community/delete.html'
+    context_object_name = 'image'
     success_url = reverse_lazy('image:list')
