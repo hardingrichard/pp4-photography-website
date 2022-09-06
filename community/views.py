@@ -74,6 +74,7 @@ class PhotoshareUpdateView(UserIsSubmitter, UpdateView):
     model = Photoshare
     fields = ['title', 'description', 'tags']
     template_name = 'community/update.html'
+    context_object_name = 'image'
     success_url = reverse_lazy('image:list')
 
 
