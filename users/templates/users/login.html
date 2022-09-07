@@ -6,7 +6,7 @@
 
 <div class="rounded mx-auto col-6">
     <div class="form-group">
-        <form action="" method="post">
+        <form method="post">
             {% csrf_token %} 
             {{ form|crispy }}
             <button type="submit" class="btn btn-success w-100 my-3">Login</button>
