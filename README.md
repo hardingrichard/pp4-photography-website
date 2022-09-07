@@ -1,5 +1,6 @@
 # Photography Website
-![Website link](docs/mockup/.png)
+![Website link](documents/mockup.png)
+[Live Website](https://pp4-photoshare.herokuapp.com/)
 
 ## Table Of Contents
 
