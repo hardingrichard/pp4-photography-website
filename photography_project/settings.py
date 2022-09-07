@@ -27,7 +27,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+development = os.environ.get('DEVELOPMENT', False)
+DEBUG = development
 
 ALLOWED_HOSTS = ['pp4-photography.herokuapp.com', 'localhost']
 
@@ -67,7 +68,10 @@ MIDDLEWARE = [
 ]
 
 # CSRF token fix
-CSRF_TRUSTED_ORIGINS = ['https://8000-hardingrich-pp4photogra-p4va6psc8s3.ws-eu63.gitpod.io', 'http://127.0.0.1:8000/']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-hardingrich-pp4photogra-p4va6psc8s3.ws-eu63.gitpod.io',
+    'http://127.0.0.1:8000/'
+    ]
 
 ROOT_URLCONF = 'photography_project.urls'
 
@@ -100,8 +104,7 @@ DATABASES = {
     }
 }
 
-
-# Temporary bug fix - commented out as causing Fatal Error. 
+# Temporary bug fix - commented out as causing Fatal Error.
 # Heroku Postgresql
 # DATABASES = {
 #     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
