@@ -289,7 +289,21 @@ The compatibility of the website was tested on a few devices ranging from deskto
 
 ### User Stories Testing
 
+
 ## Bugs And Fixes
+BUG | FIX
+----|----
+Couldn't deploy on Heroku. | By default Heroku was using an older version of python. Added runtime.txt to root with python version 3.9.13.
+ModuleNotFoundError when trying to make migration. | Commented out import on url.py and eventually proceeded to removing unused import.
+Forbidden 403 CSRF validation failed when trying to log into admin panel. | Added CSRF_TRUSTED_ORIGINS = ['https://8000-hardingrich-pp4photogra-p4va6psc8s3.ws-eu63.gitpod.io', 'http://127.0.0.1:8000/'] to validate token access.
+Syntax Error when loading manage.py runserver. | Missing comma between path route and view.
+NameError when migrating or running server, LoginView not defined. | Added views import for LoginView.
+django.db.utils.ProgrammingError: relation "community_photoshare" akready exists. | Had to do an initial --fake migrate to push the data through.
+Fatal: no pg_hba.conf entry for host "104.155.105.59", user "lfrourpqudtvoz", database "dckjej6qk5ebu7", no encryption. Relating to Heroku Postgres config settings. | Temporary fix of commenting out database variable. Later fixed by updating the user and database URL for Heroku Postgres in the env.py file.
+runserver wouldnt run, django.core.exceptions.improperlyConfigured: You're using the static files app without having set the required STATIC_URL setting. | Static variablles had accidentally been removed. Added default values from django documentation.
+SyntaxError django.template.exceptions.TemplateSyntaxError: Invalid blocktag line 13. | This was due to a typein error, changed to {% endfor %} as missing f.
+TemplateSyntaxError: Invalid block tag on line 12: endblock. Did you forget to register or load this tag? - taglist.html | Left a gap between { and % which threw out the error.
+NoReverseMatch at /image/4/delete reverse for detail with arguments '("")' not found. 1 pattern tried: ['image/(?P<pk>[0-9]+)^\Z']. | Added context_object_name = 'image' to PhotoshareDeleteView as no object was being referenced to when using image.id.
 
 ## Deployment And Version Control
 
