@@ -38,9 +38,8 @@
     2. [Cloning](#cloning)
     3. [Version Control](#version-control)
 10. [Credits](#credits)
-    1. [External Code](#external-code)
-    2. [Assets Used](#assets-used)
-11. [Acknowledgements](#acknowledgements)
+11. [Assets Used](#assets-used)
+12. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -105,18 +104,6 @@ No. | As a | I want to | so that
 <img src="documents/wireframes/homepage.png" alt="Home page wireframes image">
 </details>
 <details>
-<summary>About Page</summary>
-<img src="documents/wireframes/aboutpage.png" alt="About page wireframes image">
-</details>
-<details>
-<summary>Gallery Page</summary>
-<img src="documents/wireframes/gallerypage.png" alt="Gallery page wireframes image">
-</details>
-<details>
-<summary>Contact Page</summary>
-<img src="documents/wireframes/contactpage.png" alt="Contact page wireframes image">
-</details>
-<details>
 <summary>Booking Page</summary>
 <img src="documents/wireframes/bookingpage.png" alt="Booking page wireframes image">
 </details>
@@ -125,12 +112,12 @@ No. | As a | I want to | so that
 <img src="documents/wireframes/communitypage.png" alt="Community page wireframes image">
 </details>
 <details>
-<summary>Community - Logged Out Page</summary>
-<img src="documents/wireframes/communityloggedoutpage.png" alt="Logged Out Community page wireframes image">
+<summary>Community - Login Page</summary>
+<img src="documents/wireframes/communityloginpage.png" alt="Logged Out Community page wireframes image">
 </details>
 <details>
-<summary>Community - Logged In Page</summary>
-<img src="documents/wireframes/communityloggedinpage.png" alt="Logged In Community page wireframes image">
+<summary>Community - Signup Page</summary>
+<img src="documents/wireframes/communitysignuppage.png" alt="Logged In Community page wireframes image">
 </details>
 <details>
 <summary>404 Error Page</summary>
@@ -185,16 +172,21 @@ This page features a 404 Error message when user navigates to a page that doesnt
 * CSS
 * JavaScript
 * Python
-* SQL
+
+### Database
+* Postgresql
 
 ### Frameworks And Tools
 * Django
 * Bootstrap
-* Heroku
+* Heroku Cloud Application
+* Gunicorn
+* Taggit
+* Psycopg2 adaptor
+* Cloudinary
 * Git
 * Github
 * Gitpod
-* Google fonts
 * Balsamiq wireframes
 * Font Awesome
 * Chrome DevTools
@@ -249,9 +241,28 @@ If you wish to clone the repository you can do so by [clicking here](https://doc
 [Click here](https://github.com/hardingrichard/pp4-photography-website/commits/main) to explore the history of the creation process and see what the code looked like at different points in time and what changes were made. Regular commits were made to make it easier to view the thought process during the creation of the application and readme and also have saved backup points to avoid loss of work in case of any serious malfunctions.
 
 ## Credits
+* Stackoverflow CSRF verification fix - https://stackoverflow.com/questions/70285834/forbidden-403-csrf-verification-failed-request-aborted-reason-given-for-fail/70326426#70326426
+* Stackoverflow Heroku Build error backports.zoneinfo - https://stackoverflow.com/questions/71712258/error-could-not-build-wheels-for-backports-zoneinfo-which-is-required-to-insta
+* Stackoverflow rolling back a git repository - https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+* Stackoverflow NoReverseMatch error - https://stackoverflow.com/questions/38390177/what-is-a-noreversematch-error-and-how-do-i-fix-it
+* Code Institute I Think Therefore I Blog - Code to link app to heroku and Cloudinary
+* Classy Class-Based Views for help with views.py and templates - https://ccbv.co.uk/
+* Building a Photo-sharing App article - https://www.sitepoint.com/django-photo-sharing-app/
+* Tutorial to help set up a Django app and structure - https://www.udemy.com/course/django-3-make-websites-with-python-tutorial-beginner-learn-bootstrap/learn/lecture/17848338?start=0#overview
+* Official Django documentation Tutorial - https://docs.djangoproject.com/en/4.1/intro/tutorial01/
+* Stackoverflow images not displaying from models - https://stackoverflow.com/questions/66203883/cant-display-images-from-models-when-debug-false
+* Deploying a django app - https://www.youtube.com/watch?v=HgDEFnMV16k
+* Django crispy-forms documentation - https://django-crispy-forms.readthedocs.io/en/latest/crispy_tag_forms.html?highlight=horizontal#bootstrap3-horizontal-forms
+* Bootstrap documentation - https://getbootstrap.com/docs/5.0/layout/columns/
 
-### External Code
-
-### Assets Used
+## Assets Used
+* Architecture Photo - Unsplash https://unsplash.com/photos/w4272zlbs2s
+* Mountains Photo - Unsplash https://unsplash.com/photos/eOzXTfex0n0
+* Horse Photo - Unsplash https://unsplash.com/photos/BGohiTIBAcE
+* Dog Photo - Unsplash https://unsplash.com/photos/Y8-93C-5rnM
+* Waterfall Photo - Unsplash https://unsplash.com/photos/u5gT6ZcIEgw
+* City Photo - Unsplash https://unsplash.com/photos/uLi1S6O6Ip4
+* Plant Photo - Unplash https://unsplash.com/photos/b_sQrSo3zgs
 
 ## Acknowledgments
+I would like to give my thanks to the users of stackoverflow whos issues and solutions have allowed me to fix bugs and advance my project. My mentor Mo Shami for his feedback and my friends who helped test the deployed version.
