@@ -18,12 +18,11 @@
     1. [Database Model](#database-model)
 5. [Site Features](#site-features)
     1. [Home](#home)
-    2. [About](#about)
-    4. [Gallery](#gallery)
-    5. [Contact](#contact)
-    6. [Booking](#booking)
-    7. [Community](#community)
-    8. [404 Error Page](#404-error-page)
+    2. [Booking](#booking)
+    3. [Community](#community)
+    4. [Community Login](#community-login)
+    5. [Community Signup](#community-signup)
+    6. [404 Error Page](#404-error-page)
 6. [Technology Stack](#technology-stack)
     1. [Languages](#languages)
     2. [Frameworks And Tools](#frameworks-and-tools)
@@ -122,6 +121,10 @@ No. | As a | I want to | so that
 <img src="documents/wireframes/bookingpage.png" alt="Booking page wireframes image">
 </details>
 <details>
+<summary>Community Page</summary>
+<img src="documents/wireframes/communitypage.png" alt="Community page wireframes image">
+</details>
+<details>
 <summary>Community - Logged Out Page</summary>
 <img src="documents/wireframes/communityloggedoutpage.png" alt="Logged Out Community page wireframes image">
 </details>
@@ -137,13 +140,13 @@ No. | As a | I want to | so that
 ### Design Choice
 
 #### Layout
-The layout for the website is intended to be clean, simple and asthetically pleasing, in line with the artistic flow of photography. Clear images that fill the page and are free from distracting elements. The website is easy to navigate and consists of 8 pages. 
+The layout for the website is intended to be clean and very simple for users to be able to view and navigate free of distracting elements. The website is easy to navigate and consists of 6 pages. 
 
 #### Fonts
 The fonts used are the pairing of Roboto Medium and Noto Sans as they are easy to read and have simple typography which compliments the clean asthetic of the website.
 
 #### Colours
-The colour scheme consists of whites, greys, greens and blues. The main colour being white for the clean background and then grey used to seperate the navbar from the body with green accents.
+The colour scheme consists of whites, greys, greens and blues. The main colour being white for the clean background and then dark grey used to seperate the navbar from the body with green accents.
 
 ## Technical Design
 
@@ -155,23 +158,25 @@ The below database model contains the fields for what is stored in the database 
 </details>
 
 ## Site Features
-The website consists of 8 different pages below with the following features
+The website consists of 5 different pages where the user will be taken to a landing page on arrival giving information about the site owner, the ability to fill in a contact form and then provided with the opportunity to link to a booking and community page. The website is structured with the following pages.
 
 ### Home
-
-### About
-
-### Gallery
-
-### Contact
+This is the landing page which the user will be first taken to. On this page is displayed a hero image, information about the siteowner followed by a contact form for users to be able to contact the siteowner.
 
 ### Booking
+This page consists of a booking form where users will be able to book in an appointment with a photographer to have their pictures taken.
 
-### Community (Logged out)
+### Community page
+This page features a photo sharing application where the user can see a grid of images uploaded by the community. The user can click the Login button in the top right corner situated on the navbar in order to log into their account to begin uploading their own images. 
 
-### Community (Logged in)
+### Community Login
+This page features a user login form where an existing user can put in their username and password to access their account. There is also a clickable link for new users to be able to register and create an account.
+
+### Community Signup
+This page features a signup form where a new user can register their username and password to create an account so that they can then begin creating photos, update their photo information and also able to delete their photo.
 
 ### 404 Error page
+This page features a 404 Error message when user navigates to a page that doesnt exist. The user will have the ability to be redirected back to the landing page.
 
 ## Technology Stack
 
@@ -200,7 +205,6 @@ The website consists of 8 different pages below with the following features
 * JSHint Static Code Analysis Tool
 * PEP8 Online Validation Service
 * EmailjS
-
 
 ## Testing
 
