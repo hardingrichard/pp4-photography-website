@@ -105,7 +105,7 @@ WSGI_APPLICATION = 'photography_project.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://tnomnxzbacgfaz:efe3fa2f2bdebc6842e8ee247c4bfd50b512ec2bc0975020121861d3f5f2cb39@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/d9fr7ovkfjd5i0')
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
