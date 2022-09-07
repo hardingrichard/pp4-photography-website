@@ -77,23 +77,16 @@ No. | As a | I want to | so that
 3 | New User | easy navigate the website | I can have a good experience and find what I require.
 4 | New User | be able to contact the photographer | I can get my queries answered.
 5 | New User | be able to make a booking | I can have photoshoot and pictures taken.
-6 | New User | see where the photographer is based | I can see if local and feasible for travel.
-7 | New User | see the photographers social media presence | I can get an idea of how reputable the photographer is.
-8 | New User | be able to make an account | I can join the community page.
-9 | New User | be able to make to navigate back to home page should site error occur | I can continue my browsing with ease.
-10 | Existing User | be able to upload, edit, delete and share images | I can actively partake in the community and remove post if mistakenly uploaded.
-11 | Existing user | see what services are offered | see what best suits my needs
-12 | Existing User | log into my account | I can continue to post in the community.
-13 | Existing User | upload, edit and delete photos | I can have a social presence in the community and control over my contribution.
-14 | Existing User | book an appointment | to have photos taken.
-15 | Existing User | get in contact with photographer | I can follow up any bookings or add special requests.
-16 | Site Owner | have information about me available for customers | customers can get an idea of me and my business.
-17 | Site Owner | have my previous work on show | customers can form an opinion on my style of photography and if it matches what they are after.
-18 | Site Owner | have an easy to navigate website | customers don't become frustrated and leave site.
-19 | Site Owner | have an error page | when a customer navigates to a non existent page a 404 error is presented.
-20 | Site Owner | have a community page | customers can partake in sharing their photos and feel involved.
-21 | Site Owner | have a contact page | customers can raise any queries and get in touch with me.
-22 | Site Owner | have a booking page | I can increase business sales and offer a more automated approach at scheduling appointments.
+6 | New User | be able to make an account | I can join the community page.
+7 | Existing User | be able to upload, edit, delete and share images | I can actively partake in the community and remove post if mistakenly uploaded.
+8 | Existing User | log into my account | I can continue to post in the community.
+9 | Existing User | upload, edit and delete photos | I can have a social presence in the community and control over my contribution.
+10 | Existing User | book an appointment | to have photos taken.
+11 | Existing User | get in contact with photographer | I can follow up any bookings or add special requests.
+12 | Site Owner | have my previous work on show | customers can form an opinion on my style of photography and if it matches what they are after.
+13 | Site Owner | have an error page | when a customer navigates to a non existent page a 404 error is presented.
+14 | Site Owner | have a community page | customers can partake in sharing their photos and feel involved.
+15 | Site Owner | have a booking page | I can increase business sales and offer a more automated approach at scheduling appointments.
 
 
 ## Site Design
@@ -288,7 +281,128 @@ The compatibility of the website was tested on a few devices ranging from deskto
 
 
 ### User Stories Testing
+Testing of the User Stories which had been identified towards the top of the README. Not all user stories were able to be tested due to certain features on the website have not yet been created due to timing constraints. Features to be added. Aforementioned user stories and features are as follows:
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  1 | New User | view information about the photographer | I can see what experience the photographer has and learn about their style.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Landing page | scroll down to information about photographer | unable to test, not yet built | N/A.
+<br>
 
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  2 | New User | see the photographers work | I can see if photographers style fits my needs for booking.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Landing page | scroll down to example images from portfolio | unable to test, not yet built | N/A
+Community Photoshare | scroll through grid of images to see some of photographers work alongside community users | viewed photographs uploaded by site admin | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  3 | New User | easy navigate the website | I can have a good experience and find what I require.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Community page | scroll through page and click on images to be taken to a detailed view | On clicking images, further information was displayed | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  4 | New User | be able to contact the photographer | I can get my queries answered.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Contact form | On landing page scroll down to contact form at bottom of page | Unable to test not yet built | N/A.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  5 | New User | be able to make a booking | I can have photoshoot and pictures taken.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Booking Form | navigate to the booking page to access form | unable to test, not yet built | N/A.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  6 | New User | be able to make an account | I can join the community page.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Create account | navigate to log in at the top of the navbar, greeted with message asking Not Yet Registered? Create an account | clicked linked to create an account and was taken to a registration form to create a username and password | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  7 | New User | be able to upload, edit, delete and share images | I can actively partake in the community and remove post if mistakenly uploaded.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+CRUD functionality | click login at top in navbar, proceed to create account, on completion then go to add image at the top in the navbar. | On clicking taken to a page with a image creation form where the title, description and tags can be input when uploading image. After upload can click into image for detailed view where image can then be edited or deleted. | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  8 | Existing User | log into my account | I can continue to post in the community.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Login button | navigate up to the navbar and click Login button | taken to a screen where there is an opportunity to enter credentials for username and password | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  9 | Existing User | upload, edit and delete photos | I can have a social presence in the community and control over my contribution.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+CRUD functionality | click login at the top in navbar, enter user credentials to login. Click add image at the top in the navbar. | On clicking taken to a page with a image creation form where the title, description and tags can be input when uploading image. After upload can click into image for detailed view where image can then be edited or deleted. | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  10 | Existing User | book an appointment | to have photos taken.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Booking form | navigate to booking page | unable to test, not yet built | N/A.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  11 | Existing User | get in contact with photographer | I can follow up any bookings or add special requests.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Contact form | on landing page, scroll down to bottom for contact form | unable to test, not yet built | N/A.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  12 | Site Owner | have my previous work on show | customers can form an opinion on my style of photography and if it matches what they are after.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Landing page | scroll down to grid of images displaying work from portfolio | unable to test, not yet created | N/A.
+Community Photoshare | navigate to community page and log into account | able to view siteowner shared photos uploaded with the community | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  13 | Site Owner | have an error page | when a customer navigates to a non existent page a 404 error is presented.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+404 error page | append incorrect url to web address | taken to a 404 error page | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  14 | Site Owner | have a community page | customers can partake in sharing their photos and feel involved.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Photoshare app | navigate to community page or by logging in | grid display of user uploaded photographs shown where you can click into the image and get a detailed view of each image | worked as expected.
+<br>
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+>  15 | Site Owner | have a booking page | I can increase business sales and offer a more automated approach at scheduling appointments.
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Booking form | navigate to booking page to fill in booking form | unable to test, not yet created | N/A
+<br>
 
 ## Bugs And Fixes
 BUG | FIX
