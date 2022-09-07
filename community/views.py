@@ -1,9 +1,21 @@
-from django.shortcuts import get_object_or_404  # Raise a 404 exception
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView  # CRUD functionality
-from django.core.exceptions import PermissionDenied  # Raise a 403 exception
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin  # Force permissions for view access
-from django.urls import reverse_lazy  # redirect users
-from .models import Photoshare  # Retrieve and update database
+# Raise a 404 exception
+from django.shortcuts import get_object_or_404
+# CRUD functionality
+from django.views.generic import (
+    ListView,
+    DetailView,
+    CreateView,
+    UpdateView,
+    DeleteView
+    )
+# Raise a 403 exception
+from django.core.exceptions import PermissionDenied
+# Force permissions for view access
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+# redirect users
+from django.urls import reverse_lazy
+# Retrieve and update database
+from .models import Photoshare
 
 
 # Passes context of all photos uploaded by user and inherit ListView
@@ -13,7 +25,8 @@ class PhotoshareListView(ListView):
     context_object_name = 'images'
 
 
-# 3rd party code for ListView taken from sitepoint.com/django-photo-sharing-app and modified to suit needs
+# 3rd party code used and modified to suit needs for ListView
+# sitepoint.com/django-photo-sharing-app
 # Inherits attributes from PhotoshareListView and tag slug argument
 class PhotoshareTagListView(PhotoshareListView):
     template_name = 'community/taglist.html'
@@ -60,15 +73,17 @@ class UserIsSubmitter(UserPassesTestMixin):
     def get_image(self):
         return get_object_or_404(Photoshare, pk=self.kwargs.get('pk'))
 
-    # Test function to return true if logged in user otherwise raise a PermissionDenied exception
+    # Return true if logged in user otherwise raise PermissionDenied exception
     def test_func(self):
         if self.request.user.is_authenticated:
             return self.request.user == self.get_image().submitter
         else:
-            raise PermissionDenied('You are not logged in to make changes to the photo')
+            raise PermissionDenied(
+                'You are not logged in to make changes to the photo'
+                )
 
 
-# Child mixin inherits test function from UserIsSubmitter and updates UpdateView functionality
+# Inherits test function from UserIsSubmitter and updates UpdateView
 # Allows user to edit information about the image but not the image itself
 class PhotoshareUpdateView(UserIsSubmitter, UpdateView):
     model = Photoshare
@@ -78,7 +93,7 @@ class PhotoshareUpdateView(UserIsSubmitter, UpdateView):
     success_url = reverse_lazy('image:list')
 
 
-# Child mixin inherits test function from UserIsSubmitter and allows user to delete image
+# Inherits test function from UserIsSubmitter and allows user to delete image
 class PhotoshareDeleteView(UserIsSubmitter, DeleteView):
     model = Photoshare
     template_name = 'community/delete.html'

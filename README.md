@@ -192,15 +192,37 @@ This page features a 404 Error message when user navigates to a page that doesnt
 * Chrome DevTools
 * Chrome Lighthouse
 * WAVE WebAIM accessibility evaluation
-* W3C Jigsaw CSS Validation
 * W3C Markup Validation
-* JSHint Static Code Analysis Tool
 * PEP8 Online Validation Service
 * EmailjS
 
 ## Testing
 
 ### Validation
+
+#### HTML Validation
+The W3C markup validation service was used in order to check the validation of the HTML on the website. Most pages passed without errors. One error was returned from within Djangos crispy-forms. When validating the update and delete views the pages returned with a 403 error.
+
+<details>
+<summary>Community Page</summary>
+<img src="documents/validation/validation-community.png" alt="Community page validation screenshot">
+</details>
+<details>
+<summary>Login Page</summary>
+<img src="documents/validation/validation-login.png" alt="Login page validation screenshot">
+</details>
+<details>
+<summary>Signup Page</summary>
+<img src="documents/validation/validation-signup.png" alt="Signup page validation screenshot">
+</details>
+<details>
+<summary>Image Delete Page</summary>
+<img src="documents/validation/validation-delete.png" alt="image delete page validation screenshot">
+</details>
+<details>
+<summary>Image Update Page</summary>
+<img src="documents/validation/validation-update.png" alt="image update page validation screenshot">
+</details>
 
 ### Performance
 
