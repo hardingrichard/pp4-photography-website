@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 development = os.environ.get('DEVELOPMENT', False)
 DEBUG = development
 
-ALLOWED_HOSTS = ['pp4-photography.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['pp4-photoshare.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -97,18 +97,16 @@ WSGI_APPLICATION = 'photography_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-# Temporary bug fix - commented out as causing Fatal Error.
-# Heroku Postgresql
 # DATABASES = {
-#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
 # }
+
+DATABASES = {
+    'default': dj_database_url.parse('postgres://tnomnxzbacgfaz:efe3fa2f2bdebc6842e8ee247c4bfd50b512ec2bc0975020121861d3f5f2cb39@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/d9fr7ovkfjd5i0')
+}
 
 
 # Password validation
