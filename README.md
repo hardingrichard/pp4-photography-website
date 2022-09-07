@@ -223,12 +223,69 @@ The W3C markup validation service was used in order to check the validation of t
 <summary>Image Update Page</summary>
 <img src="documents/validation/validation-update.png" alt="image update page validation screenshot">
 </details>
+<br>
+
+#### PEP8 Validation
+The PEP8 online validation tool was used to validate the python code for the views.py, urls.py and models.py for the project and apps
+
+<details>
+<summary>Community models.py</summary>
+<img src="documents/validation/validation-communitymodels.png" alt="Community models.py validation screenshot">
+</details>
+<details>
+<summary>Community urls.py</summary>
+<img src="documents/validation/validation-communityurls.png" alt="Community urls.py validation screenshot">
+</details>
+<details>
+<summary>Community views.py</summary>
+<img src="documents/validation/validation-communityviews.png" alt="Community views.py validation screenshot">
+</details>
+<details>
+<summary>Users urls.py</summary>
+<img src="documents/validation/validation-usersurls.png" alt="Community urls.py validation screenshot">
+</details>
+<details>
+<summary>Users views.py</summary>
+<img src="documents/validation/validation-userviews.png" alt="Community views.py validation screenshot">
+</details>
+<br>
 
 ### Performance
+Googles Chrome Developer Lighthouse Tool was used in order to test and analyse the performance of the website.
+<details>
+<summary>Lighthouse Performannce</summary>
+<img src="documents/validation/website-performance.png" alt="Google Lighthouse performance analysis screenshot">
+</details>
+<br>
 
 ### Accessibility
+The WAVE WebAIM accessibility evaluation tool was used to analyse the website ensuring that it met accessibility standards. There were no errors reported on any of the tests ran.
+
+<details>
+<summary>Community</summary>
+<img src="documents/accessibility/accessibility-community.png" alt="WebAIM community accessibility evaluation">
+</details>
+<details>
+<summary>Login</summary>
+<img src="documents/accessibility/accessibility-login.png" alt="WebAIM login accessibility evaluation">
+</details>
+<details>
+<summary>Signup</summary>
+<img src="documents/accessibility/accessibility-signup.png" alt="WebAIM signup accessibility evaluation">
+</details>
+<details>
+<summary>Create</summary>
+<img src="documents/accessibility/accessibility-create.png" alt="WebAIM create accessibility evaluation">
+</details>
+<br>
 
 ### Compatibility
+The compatibility of the website was tested on a few devices ranging from desktop, mobile and tablets. Google Chrome Developer Tools device toggling was also used. The physical devices that were used for testing are as followed:
+* Apple IPhone SE
+* Apple Ipad Pro
+* Huawei Mate 20 Pro
+* Apple Macbook
+
 
 ### User Stories Testing
 
