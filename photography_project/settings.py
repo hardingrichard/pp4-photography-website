@@ -49,9 +49,6 @@ INSTALLED_APPS = [
 
     # Custom apps
     'home',
-    'about',
-    'gallery',
-    'contact',
     'booking',
     'community',
     'users',
