@@ -239,7 +239,7 @@ The PEP8 online validation tool was used to validate the python code for the vie
 </details>
 <details>
 <summary>Users views.py</summary>
-<img src="documents/validation/validation-userviews.png" alt="Community views.py validation screenshot">
+<img src="documents/validation/validation-usersviews.png" alt="Community views.py validation screenshot">
 </details>
 <br>
 
